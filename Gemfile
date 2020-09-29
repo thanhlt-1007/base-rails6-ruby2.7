@@ -39,6 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rubocop', require: false
+  gem 'rubocop-checkstyle_formatter', require: false
   gem 'rubocop-rspec', require: false
 end
 
