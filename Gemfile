@@ -36,6 +36,7 @@ gem 'webpacker', '~> 4.0'
 gem 'slim'
 
 group :development, :test do
+  gem 'parallel_tests'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'

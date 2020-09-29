@@ -42,5 +42,6 @@ jobs:
     before_script:
       - bundle _2.1.4_ install --path vendor/bundle
       - bundle exec rails db:drop db:create db:migrate
+      - bundle exec rails webpacker:install
     script:
-      - bundle _2.1.4_ exec rspec
+      - bundle _2.1.4_ exec rake parallel:spec
