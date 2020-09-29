@@ -20,7 +20,7 @@ require "email_spec"
 require "email_spec/rspec"
 SimpleCov.start "rails" do
   enable_coverage :branch
-  minimum_coverage 100
+  minimum_coverage 10
 end
 
 RSpec.configure do |config|

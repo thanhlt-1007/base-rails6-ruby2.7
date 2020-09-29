@@ -61,6 +61,7 @@ Things you may want to cover:
 * [Cucumber](https://github.com/cucumber/cucumber-rails) Write test with BDD
 * [Database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) clean your database
 * [Email Spec](https://github.com/bmabey/email-spec) for common matchers for testing emails
+* [Parallel-tests](https://github.com/grosser/parallel_tests) run test on multi CPU
 
 ## Scripts
 
