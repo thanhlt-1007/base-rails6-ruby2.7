@@ -55,8 +55,11 @@ Things you may want to cover:
 
 * [Capybara](https://github.com/jnicklas/capybara) for integration testing
 * [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) for test data
-* [RSpec](https://github.com/rspec/rspec) for unit testing
+* [RSpec-rails](https://github.com/rspec/rspec-rails) for unit testing
 * [Shoulda Matchers](http://github.com/thoughtbot/shoulda-matchers) for common RSpec matchers
+* [Webmock](https://github.com/bblimke/webmock)for stub and mock request
+* [Cucumber](https://github.com/cucumber/cucumber-rails) Write test with BDD
+* [Database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) clean your database
 * [Email Spec](https://github.com/bmabey/email-spec) for common matchers for testing emails
 
 ## Scripts
