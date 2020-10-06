@@ -10,6 +10,10 @@ ruby '2.7.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# Setting const
+gem 'config'
+# Authenticate user
+gem 'devise'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Puma as the app server
@@ -36,6 +40,8 @@ gem 'webpacker', '~> 4.0'
 gem 'slim'
 
 group :development, :test do
+  # Use env
+  gem 'dotenv-rails'
   gem 'parallel_tests'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]

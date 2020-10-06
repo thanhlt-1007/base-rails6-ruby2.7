@@ -1,0 +1,5 @@
+- flash.each do |message_type, message|
+  div class=("alert alert-#{message_type == Settings.flash_type.alert ? Settings.flash_type.danger : message_type}") 
+    = display_icon_type_flash message_type
+    = message
+    span.close-message.alert__icon-close.far.fa-times-circle

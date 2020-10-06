@@ -1,0 +1,6 @@
+flash_type:
+  success: success
+  alert: alert
+  notice: notice
+  warning: warning
+  danger: danger

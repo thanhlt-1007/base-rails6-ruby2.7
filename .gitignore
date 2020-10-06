@@ -38,3 +38,7 @@ yarn-debug.log*
 # Ignore mysql database config.
 config/database.yml
 coverage
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
