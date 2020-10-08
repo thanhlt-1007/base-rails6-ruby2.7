@@ -42,6 +42,7 @@ gem 'slim'
 group :development, :test do
   # Use env
   gem 'dotenv-rails'
+  gem 'factory_bot_rails'
   gem 'parallel_tests'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: %i[mri mingw x64_mingw]
