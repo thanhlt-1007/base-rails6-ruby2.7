@@ -57,7 +57,9 @@ jobs:
       RAILS_ENV: test
     before_script:
       - bundle _2.1.4_ install --path vendor/bundle
-      - RAILS_ENV=test bundle exec rails db:drop db:create db:migrate
+      - RAILS_ENV=test bundle exec rails db:drop
+      - RAILS_ENV=test bundle exec rails db:create
+      - RAILS_ENV=test bundle exec rails db:migrate
       - bundle exec rails webpacker:install
     script:
       - bundle _2.1.4_ exec rake parallel:spec
