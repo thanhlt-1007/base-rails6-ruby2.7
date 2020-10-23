@@ -40,6 +40,8 @@ gem 'redis', '~> 4.0'
 gem 'slim'
 # Background handle
 gem 'sidekiq', '~> 6.1.2'
+# Notification on slack
+gem 'slack-notifier'
 
 group :development, :test do
   # check security vulnerabilities

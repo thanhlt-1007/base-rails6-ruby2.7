@@ -8,6 +8,7 @@ Style/ClassAndModuleChildren:
   # manual oversight.
   SafeAutoCorrect: false
   AutoCorrect: false
+  Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
@@ -17,3 +18,5 @@ Style/Documentation:
 
 Style/MethodDefParentheses:
   Enabled: false
+Style/MultilineIfModifier:
+  Enabled: false  

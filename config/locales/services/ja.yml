@@ -1,0 +1,10 @@
+ja:
+  dictionary:
+    error_messages: &error_messages
+      error_detail: "\n\n-------------------- Error detail --------------------\n\n%{error_message}\n\n%{error_detail}"
+      request: "\n\n-------------------- Request --------------------\n\n • URL : %{url}\n • HTTP Method : %{http_method}\n • IP address : %{ip}\n • Parameters : %{parameters}\n • Timestamp : %{timestamp}\n • Server : %{server}\n • Rails root : %{rails_root}\n • Process : %{process}"
+      environment: "\n\n-------------------- Environment --------------------\n\n • HTTP_CONNECTION : %{http_connection}\n • HTTP_HOST : %{http_host}\n • HTTP_USER_AGENT : %{http_user_agent}\n • HTTP_X_FORWARDED_FOR : %{http_x_forwarded_for}\n • HTTP_X_REAL_IP : %{http_x_real_ip}\n • PATH_INFO : %{path_info}\n • QUERY_STRING : %{query_string}\n • REMOTE_ADDR : %{remote_addr}\n • REQUEST_METHOD : %{request_method}\n • REQUEST_URI : %{request_uri}\n • SCRIPT_NAME : %{script_name}\n • SERVER_NAME : %{server_name}\n • SERVER_PORT : %{server_port}\n • SERVER_PROTOCOL : %{server_protocol}\n • SERVER_SOFTWARE : %{server_software}"
+      error_status: "\nError status : %{error_status}"
+  slack:
+    error_messages:
+      <<: *error_messages
