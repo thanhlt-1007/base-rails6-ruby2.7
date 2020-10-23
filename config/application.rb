@@ -17,3 +17,5 @@ module BaseRails6Ruby27
     # the framework and any gems in your application.
   end
 end
+
+
