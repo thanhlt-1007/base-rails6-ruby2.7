@@ -3,6 +3,6 @@ concurrency: 10
 queues:
   - say_hello
 production:
-  concurrency: 25
+  concurrency: 15
 staging:
   concurrency: 15
