@@ -38,6 +38,8 @@ gem 'redis', '~> 4.0'
 
 # Engine slim for view
 gem 'slim'
+# Background handle
+gem 'sidekiq', '~> 6.1.2'
 
 group :development, :test do
   # check security vulnerabilities
