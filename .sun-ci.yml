@@ -62,4 +62,5 @@ jobs:
       - RAILS_ENV=test bundle exec rails db:migrate
       - bundle exec rails webpacker:install
     script:
-      - bundle _2.1.4_ exec rake parallel:spec
+      - bundle _2.1.4_ exec rspec
+      # - bundle _2.1.4_ exec rake parallel:spec
