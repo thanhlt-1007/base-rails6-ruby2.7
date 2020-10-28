@@ -42,6 +42,8 @@ gem 'slim'
 gem 'sidekiq', '~> 6.1.2'
 # Notification on slack
 gem 'slack-notifier'
+# implement cronjob
+gem 'whenever', require: false
 
 group :development, :test do
   # check security vulnerabilities
