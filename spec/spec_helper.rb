@@ -22,6 +22,8 @@ require "email_spec/rspec"
 SimpleCov.start "rails" do
   enable_coverage :branch
   minimum_coverage 10
+  coverage_dir ".sun-ci-reports/coverage"
+  add_group "Services", "app/services"
 end
 
 RSpec.configure do |config|
