@@ -14,6 +14,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'config'
 # Authenticate user
 gem 'devise'
+# Base Restful API framework
+gem 'grape'
+# Serialize for grape
+gem 'grape-active_model_serializers'
+gem 'grape_on_rails_routes'
+# Generate doc for API
+gem 'grape-swagger'
+gem 'grape-swagger-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Puma as the app server
@@ -28,6 +36,8 @@ gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+# Middleware Rack CORS
+gem 'rack-cors', :require => 'rack/cors'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
