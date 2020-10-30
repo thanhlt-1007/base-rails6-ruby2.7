@@ -26,6 +26,10 @@ jobs:
       - bundle _2.1.4_ install --path vendor/bundle
     script:
       - bundle _2.1.4_ exec rubocop
+    artifacts:
+      paths:
+        - .sun-ci-reports/
+      expires_in: 3 days
 
   - name: brakeman
     stage: test
@@ -34,6 +38,10 @@ jobs:
       - bundle _2.1.4_ install --path vendor/bundle
     script:
       - bundle exec brakeman
+    artifacts:
+      paths:
+        - .sun-ci-reports/
+      expires_in: 3 days  
 
   - name: bundler-audit
     stage: test
@@ -41,7 +49,11 @@ jobs:
     before_script:
       - bundle _2.1.4_ install --path vendor/bundle
     script:
-      - bundle exec bundle-audit check --update      
+      - bundle exec bundle-audit check --update
+    artifacts:
+      paths:
+        - .sun-ci-reports/
+      expires_in: 3 days       
 
   - name: rspec
     stage: test
@@ -64,3 +76,7 @@ jobs:
     script:
       - bundle _2.1.4_ exec rspec
       # - bundle _2.1.4_ exec rake parallel:spec
+    artifacts:
+      paths:
+        - .sun-ci-reports/
+      expires_in: 3 days  
