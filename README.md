@@ -31,6 +31,11 @@ Things you may want to cover:
 * [Devise](http://github.com/plataformatec/devise) for basic auth
 * [Rollbar](https://github.com/rollbar/rollbar-gem) for exception notification
 * [Google Analytics Rails](https://github.com/bgarret/google-analytics-rails) for Google Analytics support
+* [Grape](https://github.com/ruby-grape/grape) for base API
+* [Grape-active_model_serializers](https://github.com/ruby-grape/grape-active_model_serializers) Use active_model_serializers with Grape!
+* [Grape_on_rails_routes](https://github.com/syedmusamah/grape_on_rails_routes) View Rails-like routes for your Grape API's mounted on Rails
+* [Grape-swagger](https://github.com/ruby-grape/grape-swagger)[grape-swagger-rails](https://github.com/ruby-grape/grape-swagger-rails) Generate doc for API
+* [Rack-cors](https://github.com/cyu/rack-cors) support for Cross-Origin Resource Sharing (CORS) for Rack compatible web applications 
 
 ## Development Gems
 

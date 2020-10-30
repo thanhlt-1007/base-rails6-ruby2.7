@@ -2,6 +2,8 @@ require 'sidekiq/web'
 
 Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
+  mount API::Base, at: "/"
+  mount GrapeSwaggerRails::Engine, at: "/api_documentation"
 
   devise_for :users
   root "landing#index"
