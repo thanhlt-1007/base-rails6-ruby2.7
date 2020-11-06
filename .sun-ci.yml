@@ -9,7 +9,7 @@ jobs:
     stage: build
     image: framgiaciteam/ruby:2.7.1
     script:
-      - cp config/database.yml.example config/database.yml
+      - cp config/database.yml.ci config/database.yml
       - bundle _2.1.4_ install --path vendor/bundle
     cache:
       - key: node_modules_$CI_BRANCH
