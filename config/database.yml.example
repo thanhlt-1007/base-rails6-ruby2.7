@@ -19,16 +19,16 @@ default: &default
 
 development:
   <<: *default
-  database: base_rails6_ruby2_7_development
+  database: dwh_diamond_development
 
 test:
   <<: *default
-  database: base_rails6_ruby2_7_test
+  database: dwh_diamond_test
 
 staging:
   <<: *default
-  database: base_rails6_ruby2_7_staging
-  username: base_rails6_ruby2_7
+  database: dwh_diamond_staging
+  username: <%= ENV["DATABASE_USERNAME] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
   host: <%= ENV["DATABASE_HOST"] %>
 
@@ -53,7 +53,7 @@ staging:
 #
 production:
   <<: *default
-  database: base_rails6_ruby2_7_production
-  username: base_rails6_ruby2_7
+  database: dwh_diamond_production
+  username: <%= ENV["DATABASE_USERNAME] %>
   password: <%= ENV["DATABASE_PASSWORD"] %>
   host: <%= ENV["DATABASE_HOST"] %>
