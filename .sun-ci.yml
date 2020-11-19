@@ -60,11 +60,11 @@ jobs:
     image: framgiaciteam/ruby:2.7.1
     services:
       - image: mysql:5.7
-        name: mysql_db
+        name: db
         environment:
           MYSQL_ROOT_PASSWORD: password
           MYSQL_USER: root
-          MYSQL_HOST: mysql_db
+          MYSQL_HOST: db
     environment:
       RAILS_ENV: test
     before_script:
