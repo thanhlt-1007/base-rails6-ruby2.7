@@ -49,7 +49,7 @@ gem 'redis', '~> 4.0'
 # Engine slim for view
 gem 'slim'
 # Background handle
-gem 'sidekiq', '~> 6.1.2'
+gem 'sidekiq', '~> 5.2'
 # Notification on slack
 gem 'slack-notifier'
 # implement cronjob
@@ -82,6 +82,14 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # deployment
+  gem "capistrano", "~> 3.14", require: false
+  gem 'capistrano3-unicorn'
+  gem 'rvm1-capistrano3', require: false
+  gem 'capistrano-rails'
+  gem 'capistrano-sidekiq'
+  gem 'capistrano-bundler'
 end
 
 group :test do
@@ -96,6 +104,10 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'webmock'
+end
+
+group :staging, :production do
+  gem 'unicorn'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
