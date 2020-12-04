@@ -1,5 +1,5 @@
 require "rvm1/capistrano3"
-require_relative "deploy/aws_utils"
+#require_relative "deploy/aws_utils"
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.1"
 
@@ -32,7 +32,7 @@ set :rvm_type, :system
 set :rvm1_ruby_version, "2.7.1"
 set :deploy_ref, ENV["DEPLOY_REF"]
 set :deploy_ref_type, ENV["DEPLOY_REF_TYPE"]
-set :instances, get_ec2_targets unless ENV["LOCAL_DEPLOY"]
+#set :instances, get_ec2_targets unless ENV["LOCAL_DEPLOY"]
 if fetch(:stage) == :production
   set :sidekiq_role, :batch
   set :whenever_roles, :batch
